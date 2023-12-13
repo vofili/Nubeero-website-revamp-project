@@ -6,6 +6,11 @@ module.exports = {
       screens: {
         phone: "300px",
         md: "900px",
+        lg: "1200px",
+        "2xl": "1400px",
+        "3xl": "1700px",
+        "4xl": "1900px",
+        "5xl": "2400px",
       },
     },
   },

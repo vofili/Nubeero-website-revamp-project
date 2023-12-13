@@ -6,10 +6,11 @@
 body {
   background: #ffffff;
   font-family: "Euclid Circular B", sans-serif;
-
+  max-width: 100%;
   overflow-x: hidden;
+  height: fit-content;
 }
-.header-container {
+/* .header-container {
   padding-right: 6rem;
   display: flex;
   justify-content: space-between;
@@ -21,53 +22,53 @@ body {
   left: 0;
   background: #ffffff;
   z-index: 50;
-}
-.header-logo img {
+} */
+/* .header-logo img {
   width: 300px;
   height: 90px;
   margin-left: 2rem;
-}
-.link-container {
+} */
+/* .link-container {
   margin-left: 18px;
-  /* display: flex; */
-}
-.header-navlink {
+  display: flex; 
+} */
+/* .header-navlink {
   margin: 23px;
   color: #000;
   text-decoration: none;
   font-size: 12px;
   font-weight: 400;
-}
-.header-navlink:hover,
-.processing-company:hover {
+} */
+/* .header-navlink:hover, */
+/* .processing-company:hover {
   color: #00325c;
   text-decoration: underline;
-}
-.dashboard-container {
+} */
+/* .dashboard-container {
   width: 1170px;
   display: flex;
   margin-right: 0rem;
   margin-left: 5rem;
   margin-top: 8rem;
   justify-content: space-between;
-}
-.dashboard-intro {
+} */
+/* .dashboard-intro {
   margin-top: 5rem;
   width: 500px;
-}
-.dashboard-intro h1 {
+} */
+/* .dashboard-intro h1 {
   font-weight: 600;
   font-size: 44px;
   color: #00325c;
-}
-.dashboard-intro p {
+} */
+/* .dashboard-intro p {
   font-weight: 400;
   font-size: 18px;
   width: 400px;
   padding-top: 13px;
   color: #0098db;
-}
-.home-link {
+} */
+/* .home-link {
   background: #00325c;
   box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
   border-radius: 3px;
@@ -85,63 +86,63 @@ body {
   background: #000;
 
   color: #ffffff;
-}
-.partner-icon {
+} */
+/* .partner-icon {
   width: 1100px;
   align-items: center;
   margin-left: 4.9rem;
-}
+} */
 
-.partner-icon img {
+/* .partner-icon img {
   width: 100px;
   height: 31;
-}
-.whatwe-container {
+} */
+/* .whatwe-container {
   width: 1170px;
-}
-.whatwe-header {
+} */
+/* .whatwe-header {
   width: 50%;
   text-align: center;
   margin-left: 21rem;
   margin-top: 7rem;
-}
-.whatwe-header h1 {
+} */
+/* .whatwe-header h1 {
   color: #00325c;
   font-weight: 400;
   font-size: 42px;
-}
-.whatwe-header p {
+} */
+/* .whatwe-header p {
   font-weight: 400;
   font-size: 16px;
   color: #0098db;
   padding-top: 12px;
-}
+} */
 
-.whatwe-body {
+/* .whatwe-body {
   margin-left: 11rem;
   margin-right: 7rem;
-}
-.whatwe-body span {
+} */
+/* .whatwe-body span {
   display: flex;
   margin-top: 4rem;
   margin-bottom: 10px;
-}
-.whatwe-body h1 {
+} */
+/* .whatwe-body h1 {
   font-weight: 400;
   font-size: 18px;
   color: #00325c;
   display: flex;
   width: 50%;
   white-space: nowrap;
-}
-.whatwe-body p {
+} */
+/* .whatwe-body p {
   text-align: left;
   margin-left: 50px;
   font-weight: 400;
   font-size: 14px;
   color: #0098db;
-}
-.whatwe-a {
+} */
+/* .whatwe-a {
   color: #00325c;
   align-items: center;
   cursor: pointer;
@@ -149,21 +150,22 @@ body {
   margin-bottom: 10px;
   justify-content: space-between;
   width: 100px;
-}
-.whatwe-a:hover,
+/* } 
+*/
+/* .whatwe-a:hover,
 .whatwe-a h1:hover {
   color: #00325c;
   text-decoration: underline;
-}
-.services-container {
+}  */
+/* .services-container {
   width: 1170px;
-}
-.services-header {
+} */
+/* .services-header {
   width: 50%;
   margin-top: 8.5rem;
   margin-left: 21rem;
   text-align: center;
-}
+} */
 .services-header h1,
 .services-content .h2 {
   font-weight: 400;
@@ -191,12 +193,12 @@ body {
   height: 450px;
   margin-left: 10rem;
 }
-.services-body1 img {
+/* .services-body1 img {
   width: 440.67px;
   height: 399.56px;
   margin-left: 7rem;
-}
-
+} */
+/* 
 .services-body img {
   width: 440.67px;
   height: 399.56px;
@@ -219,8 +221,8 @@ body {
   width: 1100px;
   margin-left: 4.5rem;
   margin-top: 6rem;
-}
-.research-container img {
+} */
+/* .research-container img {
   width: 403px;
   height: 414px;
   margin-right: -1rem;
@@ -278,7 +280,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #0098db;
-}
+} */
 .contact-container {
   width: 100%;
 }
