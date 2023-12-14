@@ -75,7 +75,7 @@ function Header({ children }) {
       {/* SMALL SCREENS */}
       <div className=" w-full z-10 lg:hidden  bg-white bg-opacity-60 hidden h-[100px] md:flex top-0 left-0 fixed px-[40px] phone:flex justify-between  items-center ">
         <Link className="  " to="/">
-          <div className="w-[25%] ">
+          <div className="w-[40%] ">
             <img className=" " src={image} alt="Nubeero Logo" />
           </div>
         </Link>
@@ -88,7 +88,7 @@ function Header({ children }) {
         </div>
       </div>
       {hamBurgerMenu && (
-        <div className=" w-full z-20  absolute top-0 h-screen text-center  pt-4 pb-3  bg-black bg-opacity-70">
+        <div className=" w-full z-[222]   top-0 h-[100%] fixed text-center  pt-4 pb-3  bg-black bg-opacity-70">
           <div className=" float-right mr-[40px] mt-3 mb-[60px] ">
             <svg onClick={() => setHamBurgerMenu(false)} width="40" height="40" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -99,7 +99,7 @@ function Header({ children }) {
               />
             </svg>
           </div>
-          <div className="items-center  flex justify-center w-full ">
+          <div className="items-center place-content-center place-items-center  flex justify-center w-full ">
             <div className="   text-white font-semibold  ">
               {menuItem.map((item, index) => (
                 <NavLink onClick={() => window.scrollTo(0, 0)} className="grid items-center h-[70px]  hover:underline  justify-between " to={item.path} key={index}>

@@ -31,7 +31,7 @@ function ContactUs() {
                 </label>
                 <br />
                 <input
-                  className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] "
+                  className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] "
                   type="text"
                   name="name"
                   placeholder="Enter your first and last name"
@@ -41,13 +41,13 @@ function ContactUs() {
                   Email Address
                 </label>
                 <br />
-                <input className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " type="email" name="email" placeholder="Your Email" />
+                <input className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " type="email" name="email" placeholder="Your Email" />
                 <br />
                 <label className=" font-normal text-[18px] text-[#00325c]  " htmlFor="message">
                   Message
                 </label>
                 <br />
-                <textarea className=" pt-[5px] pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " name="message" placeholder="typing..." />
+                <textarea className=" pt-[5px] pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " name="message" placeholder="typing..." />
                 <br />
                 <div className=" flex justify-center mb-[20px] mt-[18px] items-center w-full ">
                   <button className="bg-[#00325c] h-[50px] w-[155px] tracking-[2px]  rounded-[3px]  text-center text-white " type="submit" value="send">
@@ -133,7 +133,7 @@ function ContactUs() {
       {/* SMALL SCREENS */}
       <div className=" w-full hidden phone:block md:block lg:hidden mt-[7rem]  ">
         <div className=" w-full justify-center items-center flex ">
-          <div className=" w-[70%] bg-[#BABABA30] bg-opacity-[15] h-[690px] text-center rounded-[5px] backdrop-blur-3xl   ">
+          <div className=" w-[80%] bg-[#BABABA30] bg-opacity-[15] h-[710px] text-center rounded-[5px] backdrop-blur-3xl   ">
             <div className=" w-[100%] flex justify-center items-center ">
               <div className="w-[70%]">
                 <h1 className=" font-medium text-[22px] text-[#00325c] pt-[4rem] ">Reach out to us for any information</h1>
@@ -147,7 +147,7 @@ function ContactUs() {
                 </label>
                 <br />
                 <input
-                  className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] "
+                  className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[250px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] "
                   type="text"
                   name="name"
                   placeholder="Enter your first and last name"
@@ -157,13 +157,13 @@ function ContactUs() {
                   Email Address
                 </label>
                 <br />
-                <input className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " type="email" name="email" placeholder="Your Email" />
+                <input className=" pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[250px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " type="email" name="email" placeholder="Your Email" />
                 <br />
                 <label className=" font-normal text-[15px] text-[#00325c]  " htmlFor="message">
                   Message
                 </label>
                 <br />
-                <textarea className=" pt-[5px] pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[330px] rounded-[3p] font-normal texxt-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " name="message" placeholder="typing..." />
+                <textarea className=" pt-[5px] pl-[10px] mt-[5px] mb-[15px] outline-none h-[50px] w-[250px] rounded-[3p] font-normal text-[14px] tracking-[0.2px] text-black bg-opacity-[0.2] " name="message" placeholder="typing..." />
                 <br />
                 <div className=" flex justify-center mb-[20px] mt-[18px] items-center w-full ">
                   <button className="bg-[#00325c] h-[50px] w-[155px] tracking-[2px]  rounded-[3px]  text-center text-white " type="submit" value="send">
@@ -172,7 +172,9 @@ function ContactUs() {
                 </div>
               </form>
             </div>
-            <p style={{ color: "#0098db", fontSize: "14px" }}>No spam. Only releases, updates and discounts</p>
+            <p className=" " style={{ color: "#0098db", fontSize: "11px" }}>
+              No spam. Only releases, updates and discounts
+            </p>
           </div>
         </div>{" "}
         {/* FOOTER */}
@@ -199,7 +201,7 @@ function ContactUs() {
                   </span>
                 </h3>
               </div>
-              <div className="flex justify-between w-1/4 mt-[3rem] text-white ">
+              <div className="flex justify-between phone:max-w-[40%] ipad:max-w-[30%] w-2/4 mt-[3rem] text-white ">
                 <a className=" hover:text-black " href="https://web.facebook.com/nubeero?_rdc=1&_rdr" title="Facebook">
                   <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
