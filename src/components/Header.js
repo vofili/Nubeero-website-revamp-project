@@ -60,7 +60,7 @@ function Header({ children }) {
       <div className=" lg:flex phone:hidden bg-white bg-opacity-60 justify-between h-[100px] px-[40px] top-0 left-0 z-50  fixed items-center w-full  ">
         <Link className="  " to="/">
           <div className="w-[40%] h-[90px]">
-            <img className=" pt-[8px]" src={image} alt="Nubeero Logo" />
+            <img onClick={() => window.scrollTo(0, 0)} className=" pt-[8px]" src={image} alt="Nubeero Logo" />
           </div>
         </Link>
 

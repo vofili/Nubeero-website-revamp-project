@@ -180,10 +180,10 @@ function ContactUs() {
         {/* FOOTER */}
         <div className=" w-full text-center mt-[14rem] bg-[#191a51] flex  justify-center items-center h-[430px] ">
           <div className=" w-[100%] flex justify-center items-center text-center">
-            <div className="w-[65%]  text-center flex flex-col justify-between items-center ">
+            <div className="w-[65%]   text-center flex flex-col justify-between items-center ">
               <NubeeroLogo />
 
-              <p className=" mt-5 mb-[20px]  font-normal text-white text-[15px] tracking-[0.23px] mix-blend-normal opacity-[0.5]   ">
+              <p className=" mt-5 mb-[20px] max-w-[65%] font-normal text-white text-[15px] tracking-[0.23px] mix-blend-normal opacity-[0.5]   ">
                 Nubeero is a consultancy and technology intermediation service provider that also offers services in software development
               </p>
               <div className="   ">
@@ -191,7 +191,7 @@ function ContactUs() {
                   <span className=" cursor-pointer mr-[7px] hover:underline" onClick={() => setTerms(true)}>
                     Terms and Conditions
                   </span>
-                  <Link to="/contact" className="mr-[5px] hover:underline">
+                  <Link onClick={() => window.scrollTo(0, 0)} to="/contact" className="mr-[5px] hover:underline">
                     Contact us
                   </Link>
 
