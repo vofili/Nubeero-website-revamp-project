@@ -49,8 +49,8 @@ const jobType = [
 const customStyles = {
   control: (base) => ({
     ...base,
-    height: 60,
-    minHeight: 60,
+    height: 59,
+    minHeight: 59,
   }),
 };
 function ResourcesForBasicInfo() {
@@ -65,32 +65,99 @@ function ResourcesForBasicInfo() {
   }
   return (
     <>
-      <div className="flex mt-4 basic-container">
-        <div className="sidebar-basic">
+      {/* LARGE SCREENS */}
+      <div className="flex phone:hidden md:hidden lg:flex mt-[8rem] w-full justify-start items-start ">
+        <div className=" flex justify-between   max-w-[80%] ">
           <SecondSideBar />
+
+          <div className=" ml-[23rem]  mt-[1rem] ">
+            <h1 className=" font-semibold text-[30px] text-[#00325c] mb-[5px] ">Confirm the resource</h1>
+
+            <p className=" font-normal text-[18px] text-[#0098db] border-solid border-b-[#bbbec2] border-b-[1px] mb-[1px] w-full pb-[15px] ">Please fill in the details below so we can get in touch with you</p>
+            <form className="mt-[40px]" action="mailto:info@nubeero.com">
+              <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="name">
+                What role would you like to hire ?
+              </label>
+              <br />
+              <Select placeholder="Select the role you would like to hire" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none  " options={jobRole} />
+              <br />
+              <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="address">
+                What skill are you looking out for ?
+              </label>
+              <br />
+              <Select placeholder="Select the skills required" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none  " options={options} />
+              <br />
+              <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="text">
+                What job type ?
+              </label>
+              <br />
+              <Select placeholder="Select the job type" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none " options={jobType} />
+              <br />
+              <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="text">
+                What level of experience are you looking for ?
+              </label>
+              <br />
+              <Select placeholder="Select the experience level you need" styles={customStyles} className=" w-full mt-[10px] text-[#00325c] outline-none  " options={years} />
+            </form>
+            <div className=" mt-7  flex justify-between items-center  ">
+              <label className="text-[#00325c] gap-1  flex w-[380px]  text-[14px]  " htmlFor="privacy and Terms">
+                <input className="w-[20px] h-[20px] " type="checkbox" required />
+                <span onClick={() => setTermsClick(true)} className="ml-[10px] hover:underline cursor-pointer hover:text-[#0098db]">
+                  Terms and Conditions
+                </span>
+                ,
+                <span onClick={() => setPrivacyClick(true)} className=" hover:underline cursor-pointer hover:text-[#0098db]">
+                  {"  "}
+                  Privacy Agreement{" "}
+                </span>
+                <span className="ml-[5px]"> polices</span>
+              </label>
+            </div>
+            <div className="flex justify-between items-centern mt-[40px] mb-10">
+              <Link onClick={() => window.scrollTo(0, 0)} to="/secondbasic">
+                <div className=" hover:bg-black w-[157px] rounded-[3px] h-[49px] font-normal bg-[#00325c]  text-[14px] text-center flex justify-center items-center tracking-[2px] text-white shadow-lg  ">BACK</div>
+              </Link>
+
+              <Link onClick={() => window.scrollTo(0, 0)} to="/resourcedetails/resourcemodal">
+                <div className=" hover:bg-black w-[157px] rounded-[3px] h-[49px] font-normal bg-[#00325c]  text-[14px] text-center flex justify-center items-center tracking-[2px] text-white shadow-lg  "> SUBMIT</div>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="basic-form">
-          <h1>Confirm the resource</h1>
-          <p className="p">Please fill in the details below so we can get in touch with you</p>
-          <form className="basic-form-details" action="mailto:info@nubeero.com">
-            <label htmlFor="name">What role would you like to hire ?</label>
+      </div>
+      {/* SMALL SCREENS */}
+      <div className=" w-full phone:flex lg:hidden h-fit pb-[50px] mt-[8rem] flex justify-center items-center ">
+        <div className=" phone:w-[80%] md:max-w-[70%] flex justify-between flex-col ">
+          <h1 className=" font-semibold text-[30px] text-[#00325c] mb-[5px] ">Confirm the resource</h1>
+
+          <p className=" font-normal text-[18px] text-[#0098db] border-solid border-b-[#bbbec2] border-b-[1px] mb-[1px] w-full pb-[15px] ">Please fill in the details below so we can get in touch with you</p>
+          <form className="mt-[40px]" action="mailto:info@nubeero.com">
+            <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="name">
+              What role would you like to hire ?
+            </label>
             <br />
-            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={jobRole} />
+            <Select placeholder="Select the role you would like to hire" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none  " options={jobRole} />
             <br />
-            <label htmlFor="address">What skill are you looking out for ?</label>
+            <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="address">
+              What skill are you looking out for ?
+            </label>
             <br />
-            <Select placeholder="Select the skills required" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={options} />
+            <Select placeholder="Select the skills required" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none  " options={options} />
             <br />
-            <label htmlFor="text">What job type ?</label>
+            <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="text">
+              What job type ?
+            </label>
             <br />
-            <Select placeholder="Select the job type" styles={customStyles} className="lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px]" options={jobType} />
+            <Select placeholder="Select the job type" styles={customStyles} className="w-full mt-[10px] text-[#00325c] outline-none " options={jobType} />
             <br />
-            <label htmlFor="text">What level of experience are you looking for ?</label>
+            <label className=" font-normal text-[18px] text-[#00325c] " htmlFor="text">
+              What level of experience are you looking for ?
+            </label>
             <br />
-            <Select placeholder="Select the experience level you need" styles={customStyles} className=" lg:w-[670px] mt-[10px] text-[#00325c] outline-none xl:w-[670px] 2xl:w-[900px] " options={years} />
+            <Select placeholder="Select the experience level you need" styles={customStyles} className=" w-full mt-[10px] text-[#00325c] outline-none  " options={years} />
           </form>
-          <div className=" mt-7 mb-5 ml-[-2px]  resources-privacy  ">
-            <label className="text-[#00325c]  flex w-[360px]  text-[14px]  " htmlFor="privacy and Terms">
+          <div className=" mt-7  flex justify-between items-center  ">
+            <label className="text-[#00325c] gap-1  flex phone:w-full ipad:w-[380px]  text-[14px]  " htmlFor="privacy and Terms">
               <input className="w-[20px] h-[20px] " type="checkbox" required />
               <span onClick={() => setTermsClick(true)} className="ml-[10px] hover:underline cursor-pointer hover:text-[#0098db]">
                 Terms and Conditions
@@ -103,13 +170,14 @@ function ResourcesForBasicInfo() {
               <span className="ml-[5px]"> polices</span>
             </label>
           </div>
-          <div className="basic-button mb-10">
-            <div className="option-link">
-              <Link to="/secondbasic">BACK</Link>
-            </div>
-            <div className="option-link ">
-              <Link to="/resourcedetails">SUBMIT</Link>
-            </div>
+          <div className="flex justify-between items-centern mt-[40px] mb-10">
+            <Link onClick={() => window.scrollTo(0, 0)} to="/secondbasic">
+              <div className=" hover:bg-black w-[100px] rounded-[3px] h-[49px] font-normal bg-[#00325c]  text-[14px] text-center flex justify-center items-center tracking-[2px] text-white shadow-lg  ">BACK</div>
+            </Link>
+
+            <Link onClick={() => window.scrollTo(0, 0)} to="/resourcedetails/resourcemodal">
+              <div className=" hover:bg-black w-[100px] rounded-[3px] h-[49px] font-normal bg-[#00325c]  text-[14px] text-center flex justify-center items-center tracking-[2px] text-white shadow-lg  "> SUBMIT</div>
+            </Link>
           </div>
         </div>
       </div>

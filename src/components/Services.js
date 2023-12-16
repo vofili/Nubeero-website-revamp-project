@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import image from "./Image.png";
-import group from "./Content/Content/group.png";
+import image from "../components/Content/images/overview.png";
+import group from "../components/Content/images/group.png";
 import "../App.css";
 
 function Services() {
@@ -21,7 +21,7 @@ function Services() {
                 Discover the benefits of resource outsourcing with our expert team. Our service provides businesses with access to a diverse range of highly skilled professionals, enabling you to tap into expertise you may not have in-house. From IT
                 support to marketing, financial management, and more, our outsourcing solutions are designed to meet your unique business needs.
               </p>
-              <Link className="  " to="/processing">
+              <Link onClick={() => window.scrollTo(0, 0)} className="  " to="/processing">
                 <div className="w-32 mt-4 text-[#00325c] hover:underline  items-center justify-between flex">
                   Learn More
                   <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ function Services() {
                 Discover the benefits of resource outsourcing with our expert team. Our service provides businesses with access to a diverse range of highly skilled professionals, enabling you to tap into expertise you may not have in-house. From IT
                 support to marketing, financial management, and more, our outsourcing solutions are designed to meet your unique business needs.
               </p>
-              <Link className="  " to="/processing">
+              <Link onClick={() => window.scrollTo(0, 0)} className="  " to="/processing">
                 <div className="w-32 mt-4 text-[#00325c] hover:underline  items-center justify-between flex">
                   Learn More
                   <svg width="18" height="14" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">

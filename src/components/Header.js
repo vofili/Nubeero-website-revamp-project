@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import image from "./nubeero logo.png";
+import image from "../components/Content/images/nubeero logo.png";
 import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 
@@ -75,7 +75,7 @@ function Header({ children }) {
       {/* SMALL SCREENS */}
       <div className=" w-full z-10 lg:hidden  bg-white bg-opacity-60 hidden h-[100px] md:flex top-0 left-0 fixed px-[40px] phone:flex justify-between  items-center ">
         <Link className="  " to="/">
-          <div className="w-[40%] ">
+          <div className=" min-w-[40%] w-[35%] ">
             <img className=" " src={image} alt="Nubeero Logo" />
           </div>
         </Link>

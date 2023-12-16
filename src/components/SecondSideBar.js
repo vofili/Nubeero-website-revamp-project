@@ -40,16 +40,24 @@ function SecondSideBar() {
   ];
   return (
     <>
-      <div className="sidebar-container">
-        {secondMenu.map((item, index) => (
-          <NavLink to={item.path} key={index} className={({ isActive }) => (isActive ? "sidebarclick" : "sidebar-span")}>
-            <span>
-              {item.icon}
-
-              <h2 className="mr-8 sidebar-h2">{item.name}</h2>
-            </span>
-          </NavLink>
-        ))}
+      <div className=" phone:hidden md:hidden lg:flex w-[300px]  h-[460px] ml-[20px] fixed mt-[40px] border-r-[1px] flex flex-col pl-[30px] border-solid border-r-[#bbbec2] ">
+        <div className="w-3/4 text-left">
+          {secondMenu.map((item, index) => (
+            <NavLink
+              onClick={() => window.scrollTo(0, 0)}
+              to={item.path}
+              key={index}
+              className={({ isActive }) =>
+                isActive
+                  ? " flex justify-between items-center w-full  text-left font-normal text-[18px] text-[#0098db] h-[80px] "
+                  : "flex h-[80px] w-full justify-between hover:text-[rgb(0,152,219)] items-center text-left font-normal  text-[18px] text-[#00325c] "
+              }
+            >
+              <span>{item.icon}</span>
+              <h2 className=" w-[80%] pl-[20px] ">{item.name}</h2>
+            </NavLink>
+          ))}
+        </div>
       </div>
     </>
   );

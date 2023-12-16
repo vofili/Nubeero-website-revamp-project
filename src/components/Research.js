@@ -1,5 +1,5 @@
-import graph from "./graph.png";
-import group from "./group.png";
+import graph from "../components/Content/images/graph.png";
+import group from "../components/Content/images/people.png";
 
 function Research() {
   return (
