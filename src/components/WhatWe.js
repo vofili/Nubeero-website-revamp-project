@@ -9,8 +9,8 @@ function WhatWe() {
           <div className="w-[50%]">
             <h1 className=" text-[#00325c] text-[42px] font-normal  ">What We Do</h1>
             <p className=" text-[#0098db]  mt-[12px] text-[16px] font-normal  ">
-              We provide innovative solutions for insurance, business process optimization & ecommerce service. Our promise is that we are growth enablers,serving the needs of the industries in which we play.
-            </p>
+              We are a company pushing the boundaries of innovation in Digital Insurance, Digital Banking, Ecommerce, Talent Sourcing and business process optimization. Our promise is that we build products that serve as growth enablers, serving the needs of all our customers.
+          </p>
           </div>
         </div>
         <div className=" flex flex-col justify-center mt-[4rem] items-center w-full ">
@@ -46,10 +46,11 @@ function WhatWe() {
                   </svg>
                 </div>
                 <div className="  ml-[20px] text-left ">
-                  <h1 className=" font-normal mb-1 text-[18px] text-[#00325c] ">Insurance Tech</h1>
+                  <h1 className=" font-normal mb-1 text-[18px] text-[#00325c] ">InsurTech Platform</h1>
 
+                 
                   <p className=" w-3/4 font-normal  text-[14px] text-[#0098db] ">
-                    We are using deep learning trained artificial inteligence (AI) to handle the tasks of insurance brokers and find the right mix of policies to complete an individuals or Group coverage.
+                  Our innovative Insurtech product is a powerful AI-driven platform that revolutionizes the insurance experience. Our product intelligently handles tasks typically performed by brokers{" "}             
                   </p>
                 </div>
               </div>
@@ -85,7 +86,10 @@ function WhatWe() {
                   <div className=" ml-[20px] text-left ">
                     <h1 className=" font-normal mb-1 text-[18px] text-[#00325c] ">Merchant Services</h1>
 
-                    <p className=" font-normal  text-[14px] text-[#0098db] ">Maximize your business's operations with innovative and trusted merchant services, payment processing services and solutions.</p>
+                    <p className=" font-normal  text-[14px] text-[#0098db] ">
+                    Maximize your business's operations with innovative and trusted merchant services, 
+                    payment processing services and solutions.
+                    </p>
                   </div>
                 </div>
               </a>
@@ -106,7 +110,8 @@ function WhatWe() {
                   <h1 className=" font-normal mb-1 text-[18px] text-[#00325c] ">Software Development</h1>
 
                   <p className=" w-3/4 font-normal  text-[14px] text-[#0098db] ">
-                    We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology while also performing corresponding research and development and training activities{" "}
+                    We are positioned to help businesses take advantage of emerging technologies as well as the ability to absorb the technology 
+                    while also performing corresponding research and development and training activities{" "}
                   </p>
                 </div>
               </div>
